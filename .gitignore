@@ -4,6 +4,8 @@ Caddyfile
 Caddyfile.*
 !caddyfile/
 
+.github/*
+
 # artifacts from pprof tooling
 *.prof
 *.test
