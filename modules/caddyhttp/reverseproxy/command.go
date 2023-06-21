@@ -21,14 +21,14 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/httpcaddyfile"
-	caddycmd "github.com/caddyserver/caddy/v2/cmd"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/headers"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
 	"github.com/spf13/cobra"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/caddyconfig"
+	"github.com/sunbird1015/caddy/v2/caddyconfig/httpcaddyfile"
+	caddycmd "github.com/sunbird1015/caddy/v2/cmd"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp/headers"
+	"github.com/sunbird1015/caddy/v2/modules/caddytls"
 	"go.uber.org/zap"
 )
 

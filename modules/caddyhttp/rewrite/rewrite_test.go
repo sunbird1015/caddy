@@ -19,7 +19,7 @@ import (
 	"regexp"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/sunbird1015/caddy/v2"
 )
 
 func TestRewrite(t *testing.T) {
@@ -333,7 +333,7 @@ func TestRewrite(t *testing.T) {
 			input:  newRequest(t, "GET", "/foo/findme%2Fbar"),
 			expect: newRequest(t, "GET", "/foo/replaced%2Fbar"),
 		},
-		
+
 		{
 			rule:   Rewrite{PathRegexp: []*regexReplacer{{Find: "/{2,}", Replace: "/"}}},
 			input:  newRequest(t, "GET", "/foo//bar///baz?a=b//c"),

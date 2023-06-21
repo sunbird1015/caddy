@@ -27,11 +27,11 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	caddycmd "github.com/caddyserver/caddy/v2/cmd"
 	"github.com/spf13/cobra"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/caddyconfig"
+	"github.com/sunbird1015/caddy/v2/caddyconfig/caddyfile"
+	caddycmd "github.com/sunbird1015/caddy/v2/cmd"
 	"go.uber.org/zap"
 )
 

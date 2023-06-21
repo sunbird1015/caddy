@@ -1,5 +1,5 @@
 <p align="center">
-	<a href="https://caddyserver.com">
+	<a href="https://sunbird1015.com">
 		<picture>
 			<source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/1128849/210187358-e2c39003-9a5e-4dd5-a783-6deb6483ee72.svg">
 			<source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/1128849/210187356-dfb7f1c5-ac2e-43aa-bb23-fc014280ae1f.svg">
@@ -13,18 +13,18 @@
 <h3 align="center">Every site on HTTPS</h3>
 <p align="center">Caddy is an extensible server platform that uses TLS by default.</p>
 <p align="center">
-	<a href="https://github.com/caddyserver/caddy/actions/workflows/ci.yml"><img src="https://github.com/caddyserver/caddy/actions/workflows/ci.yml/badge.svg"></a>
-	<a href="https://pkg.go.dev/github.com/caddyserver/caddy/v2"><img src="https://img.shields.io/badge/godoc-reference-%23007d9c.svg"></a>
+	<a href="https://github.com/sunbird1015/caddy/actions/workflows/ci.yml"><img src="https://github.com/sunbird1015/caddy/actions/workflows/ci.yml/badge.svg"></a>
+	<a href="https://pkg.go.dev/github.com/sunbird1015/caddy/v2"><img src="https://img.shields.io/badge/godoc-reference-%23007d9c.svg"></a>
 	<br>
-	<a href="https://twitter.com/caddyserver" title="@caddyserver on Twitter"><img src="https://img.shields.io/badge/twitter-@caddyserver-55acee.svg" alt="@caddyserver on Twitter"></a>
+	<a href="https://twitter.com/sunbird1015" title="@sunbird1015 on Twitter"><img src="https://img.shields.io/badge/twitter-@sunbird1015-55acee.svg" alt="@sunbird1015 on Twitter"></a>
 	<a href="https://caddy.community" title="Caddy Forum"><img src="https://img.shields.io/badge/community-forum-ff69b4.svg" alt="Caddy Forum"></a>
 	<br>
-	<a href="https://sourcegraph.com/github.com/caddyserver/caddy?badge" title="Caddy on Sourcegraph"><img src="https://sourcegraph.com/github.com/caddyserver/caddy/-/badge.svg" alt="Caddy on Sourcegraph"></a>
+	<a href="https://sourcegraph.com/github.com/sunbird1015/caddy?badge" title="Caddy on Sourcegraph"><img src="https://sourcegraph.com/github.com/sunbird1015/caddy/-/badge.svg" alt="Caddy on Sourcegraph"></a>
 	<a href="https://cloudsmith.io/~caddy/repos/"><img src="https://img.shields.io/badge/OSS%20hosting%20by-cloudsmith-blue?logo=cloudsmith" alt="Cloudsmith"></a>
 </p>
 <p align="center">
-	<a href="https://github.com/caddyserver/caddy/releases">Releases</a> ·
-	<a href="https://caddyserver.com/docs/">Documentation</a> ·
+	<a href="https://github.com/sunbird1015/caddy/releases">Releases</a> ·
+	<a href="https://sunbird1015.com/docs/">Documentation</a> ·
 	<a href="https://caddy.community">Get Help</a>
 </p>
 
@@ -46,7 +46,7 @@
 <p align="center">
 	<b>Powered by</b>
 	<br>
-	<a href="https://github.com/caddyserver/certmagic">
+	<a href="https://github.com/sunbird1015/certmagic">
 		<picture>
 			<source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/55066419/206946718-740b6371-3df3-4d72-a822-47e4c48af999.png">
 			<source media="(prefers-color-scheme: light)" srcset="https://user-images.githubusercontent.com/1128849/49704830-49d37200-fbd5-11e8-8385-767e0cd033c3.png">
@@ -56,12 +56,12 @@
 </p>
 
 
-## [Features](https://caddyserver.com/v2)
+## [Features](https://sunbird1015.com/v2)
 
-- **Easy configuration** with the [Caddyfile](https://caddyserver.com/docs/caddyfile)
-- **Powerful configuration** with its [native JSON config](https://caddyserver.com/docs/json/)
-- **Dynamic configuration** with the [JSON API](https://caddyserver.com/docs/api)
-- [**Config adapters**](https://caddyserver.com/docs/config-adapters) if you don't like JSON
+- **Easy configuration** with the [Caddyfile](https://sunbird1015.com/docs/caddyfile)
+- **Powerful configuration** with its [native JSON config](https://sunbird1015.com/docs/json/)
+- **Dynamic configuration** with the [JSON API](https://sunbird1015.com/docs/api)
+- [**Config adapters**](https://sunbird1015.com/docs/config-adapters) if you don't like JSON
 - **Automatic HTTPS** by default
 	- [ZeroSSL](https://zerossl.com) and [Let's Encrypt](https://letsencrypt.org) for public names
 	- Fully-managed local CA for internal names & IPs
@@ -71,17 +71,17 @@
 - **Production-ready** after serving trillions of requests and managing millions of TLS certificates
 - **Scales to hundreds of thousands of sites** as proven in production
 - **HTTP/1.1, HTTP/2, and HTTP/3** all supported by default
-- **Highly extensible** [modular architecture](https://caddyserver.com/docs/architecture) lets Caddy do anything without bloat
+- **Highly extensible** [modular architecture](https://sunbird1015.com/docs/architecture) lets Caddy do anything without bloat
 - **Runs anywhere** with **no external dependencies** (not even libc)
 - Written in Go, a language with higher **memory safety guarantees** than other servers
 - Actually **fun to use**
-- So much more to [discover](https://caddyserver.com/v2)
+- So much more to [discover](https://sunbird1015.com/v2)
 
 ## Install
 
-The simplest, cross-platform way to get started is to download Caddy from [GitHub Releases](https://github.com/caddyserver/caddy/releases) and place the executable file in your PATH.
+The simplest, cross-platform way to get started is to download Caddy from [GitHub Releases](https://github.com/sunbird1015/caddy/releases) and place the executable file in your PATH.
 
-See [our online documentation](https://caddyserver.com/docs/install) for other install instructions.
+See [our online documentation](https://sunbird1015.com/docs/install) for other install instructions.
 
 ## Build from source
 
@@ -94,7 +94,7 @@ Requirements:
 _**Note:** These steps [will not embed proper version information](https://github.com/golang/go/issues/29228). For that, please follow the instructions in the next section._
 
 ```bash
-$ git clone "https://github.com/caddyserver/caddy.git"
+$ git clone "https://github.com/sunbird1015/caddy.git"
 $ cd caddy/cmd/caddy/
 $ go build
 ```
@@ -117,7 +117,7 @@ replacing `username` with your actual username. Please be careful and only do th
 
 ### With version information and/or plugins
 
-Using [our builder tool, `xcaddy`](https://github.com/caddyserver/xcaddy)...
+Using [our builder tool, `xcaddy`](https://github.com/sunbird1015/xcaddy)...
 
 ```
 $ xcaddy build
@@ -127,9 +127,9 @@ $ xcaddy build
 
 1. Create a new folder: `mkdir caddy`
 2. Change into it: `cd caddy`
-3. Copy [Caddy's main.go](https://github.com/caddyserver/caddy/blob/master/cmd/caddy/main.go) into the empty folder. Add imports for any custom plugins you want to add.
+3. Copy [Caddy's main.go](https://github.com/sunbird1015/caddy/blob/master/cmd/caddy/main.go) into the empty folder. Add imports for any custom plugins you want to add.
 4. Initialize a Go module: `go mod init caddy`
-5. (Optional) Pin Caddy version: `go get github.com/caddyserver/caddy/v2@version` replacing `version` with a git tag, commit, or branch name.
+5. (Optional) Pin Caddy version: `go get github.com/sunbird1015/caddy/v2@version` replacing `version` with a git tag, commit, or branch name.
 6. (Optional) Add plugins by adding their import: `_ "import/path/here"`
 7. Compile: `go build`
 
@@ -138,11 +138,11 @@ $ xcaddy build
 
 ## Quick start
 
-The [Caddy website](https://caddyserver.com/docs/) has documentation that includes tutorials, quick-start guides, reference, and more.
+The [Caddy website](https://sunbird1015.com/docs/) has documentation that includes tutorials, quick-start guides, reference, and more.
 
-**We recommend that all users -- regardless of experience level -- do our [Getting Started](https://caddyserver.com/docs/getting-started) guide to become familiar with using Caddy.**
+**We recommend that all users -- regardless of experience level -- do our [Getting Started](https://sunbird1015.com/docs/getting-started) guide to become familiar with using Caddy.**
 
-If you've only got a minute, [the website has several quick-start tutorials](https://caddyserver.com/docs/quick-starts) to choose from! However, after finishing a quick-start tutorial, please read more documentation to understand how the software works. 🙂
+If you've only got a minute, [the website has several quick-start tutorials](https://sunbird1015.com/docs/quick-starts) to choose from! However, after finishing a quick-start tutorial, please read more documentation to understand how the software works. 🙂
 
 
 
@@ -151,15 +151,15 @@ If you've only got a minute, [the website has several quick-start tutorials](htt
 
 Caddy is most often used as an HTTPS server, but it is suitable for any long-running Go program. First and foremost, it is a platform to run Go applications. Caddy "apps" are just Go programs that are implemented as Caddy modules. Two apps -- `tls` and `http` -- ship standard with Caddy.
 
-Caddy apps instantly benefit from [automated documentation](https://caddyserver.com/docs/json/), graceful on-line [config changes via API](https://caddyserver.com/docs/api), and unification with other Caddy apps.
+Caddy apps instantly benefit from [automated documentation](https://sunbird1015.com/docs/json/), graceful on-line [config changes via API](https://sunbird1015.com/docs/api), and unification with other Caddy apps.
 
-Although [JSON](https://caddyserver.com/docs/json/) is Caddy's native config language, Caddy can accept input from [config adapters](https://caddyserver.com/docs/config-adapters) which can essentially convert any config format of your choice into JSON: Caddyfile, JSON 5, YAML, TOML, NGINX config, and more.
+Although [JSON](https://sunbird1015.com/docs/json/) is Caddy's native config language, Caddy can accept input from [config adapters](https://sunbird1015.com/docs/config-adapters) which can essentially convert any config format of your choice into JSON: Caddyfile, JSON 5, YAML, TOML, NGINX config, and more.
 
-The primary way to configure Caddy is through [its API](https://caddyserver.com/docs/api), but if you prefer config files, the [command-line interface](https://caddyserver.com/docs/command-line) supports those too.
+The primary way to configure Caddy is through [its API](https://sunbird1015.com/docs/api), but if you prefer config files, the [command-line interface](https://sunbird1015.com/docs/command-line) supports those too.
 
 Caddy exposes an unprecedented level of control compared to any web server in existence. In Caddy, you are usually setting the actual values of the initialized types in memory that power everything from your HTTP handlers and TLS handshakes to your storage medium. Caddy is also ridiculously extensible, with a powerful plugin system that makes vast improvements over other web servers.
 
-To wield the power of this design, you need to know how the config document is structured. Please see [our documentation site](https://caddyserver.com/docs/) for details about [Caddy's config structure](https://caddyserver.com/docs/json/).
+To wield the power of this design, you need to know how the config document is structured. Please see [our documentation site](https://sunbird1015.com/docs/) for details about [Caddy's config structure](https://sunbird1015.com/docs/json/).
 
 Nearly all of Caddy's configuration is contained in a single config document, rather than being scattered across CLI flags and env variables and a configuration file as with other web servers. This makes managing your server config more straightforward and reduces hidden variables/factors.
 
@@ -168,9 +168,9 @@ Nearly all of Caddy's configuration is contained in a single config document, ra
 
 Our website has complete documentation:
 
-**https://caddyserver.com/docs/**
+**https://sunbird1015.com/docs/**
 
-The docs are also open source. You can contribute to them here: https://github.com/caddyserver/website
+The docs are also open source. You can contribute to them here: https://github.com/sunbird1015/website
 
 
 
@@ -182,7 +182,7 @@ The docs are also open source. You can contribute to them here: https://github.c
 
 - Individuals can exchange help for free on our community forum at https://caddy.community. Remember that people give help out of their spare time and good will. The best way to get help is to give it first!
 
-Please use our [issue tracker](https://github.com/caddyserver/caddy/issues) only for bug reports and feature requests, i.e. actionable development items (support questions will usually be referred to the forums).
+Please use our [issue tracker](https://github.com/sunbird1015/caddy/issues) only for bug reports and feature requests, i.e. actionable development items (support questions will usually be referred to the forums).
 
 
 
@@ -190,9 +190,9 @@ Please use our [issue tracker](https://github.com/caddyserver/caddy/issues) only
 
 Matthew Holt began developing Caddy in 2014 while studying computer science at Brigham Young University. (The name "Caddy" was chosen because this software helps with the tedious, mundane tasks of serving the Web, and is also a single place for multiple things to be organized together.) It soon became the first web server to use HTTPS automatically and by default, and now has hundreds of contributors and has served trillions of HTTPS requests.
 
-**The name "Caddy" is trademarked.** The name of the software is "Caddy", not "Caddy Server" or "CaddyServer". Please call it "Caddy" or, if you wish to clarify, "the Caddy web server". Caddy is a registered trademark of Stack Holdings GmbH.
+**The name "Caddy" is trademarked.** The name of the software is "Caddy", not "Caddy Server" or "sunbird1015". Please call it "Caddy" or, if you wish to clarify, "the Caddy web server". Caddy is a registered trademark of Stack Holdings GmbH.
 
-- _Project on Twitter: [@caddyserver](https://twitter.com/caddyserver)_
+- _Project on Twitter: [@sunbird1015](https://twitter.com/sunbird1015)_
 - _Author on Twitter: [@mholt6](https://twitter.com/mholt6)_
 
 Caddy is a project of [ZeroSSL](https://zerossl.com), a Stack Holdings company.

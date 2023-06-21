@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/caddytest"
+	"github.com/sunbird1015/caddy/v2/caddytest"
 )
 
 func TestMap(t *testing.T) {

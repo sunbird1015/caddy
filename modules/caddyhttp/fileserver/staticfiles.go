@@ -31,9 +31,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/encode"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp/encode"
 	"go.uber.org/zap"
 )
 
@@ -330,13 +330,13 @@ func (fsrv *FileServer) ServeHTTP(w http.ResponseWriter, r *http.Request, next c
 	// if URL canonicalization is enabled, we need to enforce trailing
 	// slash convention: if a directory, trailing slash; if a file, no
 	// trailing slash - not enforcing this can break relative hrefs
-	// in HTML (see https://github.com/caddyserver/caddy/issues/2741)
+	// in HTML (see https://github.com/sunbird1015/caddy/issues/2741)
 	if fsrv.CanonicalURIs == nil || *fsrv.CanonicalURIs {
 		// Only redirect if the last element of the path (the filename) was not
 		// rewritten; if the admin wanted to rewrite to the canonical path, they
 		// would have, and we have to be very careful not to introduce unwanted
 		// redirects and especially redirect loops!
-		// See https://github.com/caddyserver/caddy/issues/4205.
+		// See https://github.com/sunbird1015/caddy/issues/4205.
 		origReq := r.Context().Value(caddyhttp.OriginalRequestCtxKey).(http.Request)
 		if path.Base(origReq.URL.Path) == path.Base(r.URL.Path) {
 			if implicitIndexFile && !strings.HasSuffix(origReq.URL.Path, "/") {

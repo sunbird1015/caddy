@@ -31,9 +31,9 @@ import (
 
 	"github.com/Masterminds/sprig/v3"
 	chromahtml "github.com/alecthomas/chroma/v2/formatters/html"
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
 	"github.com/dustin/go-humanize"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp"
 	"github.com/yuin/goldmark"
 	highlighting "github.com/yuin/goldmark-highlighting/v2"
 	"github.com/yuin/goldmark/extension"
@@ -190,7 +190,7 @@ func (c TemplateContext) funcHTTPInclude(uri string) (string, error) {
 	}
 	virtReq.Host = c.Req.Host
 	virtReq.Header = c.Req.Header.Clone()
-	virtReq.Header.Set("Accept-Encoding", "identity") // https://github.com/caddyserver/caddy/issues/4352
+	virtReq.Header.Set("Accept-Encoding", "identity") // https://github.com/sunbird1015/caddy/issues/4352
 	virtReq.Trailer = c.Req.Trailer.Clone()
 	virtReq.Header.Set(recursionPreventionHeader, strconv.Itoa(recursionCount))
 

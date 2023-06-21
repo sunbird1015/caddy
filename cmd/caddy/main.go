@@ -25,14 +25,14 @@
 //  4. Run `go install` or `go build` - you now have a custom binary!
 //
 // Or you can use xcaddy which does it all for you as a command:
-// https://github.com/caddyserver/xcaddy
+// https://github.com/sunbird1015/xcaddy
 package main
 
 import (
-	caddycmd "github.com/caddyserver/caddy/v2/cmd"
+	caddycmd "github.com/sunbird1015/caddy/v2/cmd"
 
 	// plug in Caddy modules here
-	_ "github.com/caddyserver/caddy/v2/modules/standard"
+	_ "github.com/sunbird1015/caddy/v2/modules/standard"
 )
 
 func main() {

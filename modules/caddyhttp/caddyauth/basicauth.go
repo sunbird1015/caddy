@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/sunbird1015/caddy/v2"
 	"golang.org/x/sync/singleflight"
 )
 

@@ -26,13 +26,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
-	"github.com/caddyserver/certmagic"
 	"github.com/mholt/acmez/acme"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/caddyconfig"
+	"github.com/sunbird1015/caddy/v2/caddyconfig/caddyfile"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp"
+	"github.com/sunbird1015/caddy/v2/modules/caddytls"
+	"github.com/sunbird1015/certmagic"
 	"go.uber.org/zap/zapcore"
 )
 
@@ -129,7 +129,7 @@ func parseTLS(h Helper) ([]ConfigValue, error) {
 
 			// tag this certificate so if multiple certs match, specifically
 			// this one that the user has provided will be used, see #2588:
-			// https://github.com/caddyserver/caddy/issues/2588 ... but we
+			// https://github.com/sunbird1015/caddy/issues/2588 ... but we
 			// must be careful about how we do this; being careless will
 			// lead to failed handshakes
 			//

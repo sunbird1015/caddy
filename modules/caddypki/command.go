@@ -23,10 +23,10 @@ import (
 	"os"
 	"path"
 
-	"github.com/caddyserver/caddy/v2"
-	caddycmd "github.com/caddyserver/caddy/v2/cmd"
 	"github.com/smallstep/truststore"
 	"github.com/spf13/cobra"
+	"github.com/sunbird1015/caddy/v2"
+	caddycmd "github.com/sunbird1015/caddy/v2/cmd"
 )
 
 func init() {

@@ -21,11 +21,11 @@ import (
 	"encoding/pem"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddypki"
-	"github.com/caddyserver/certmagic"
 	"github.com/smallstep/certificates/authority/provisioner"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/caddyconfig/caddyfile"
+	"github.com/sunbird1015/caddy/v2/modules/caddypki"
+	"github.com/sunbird1015/certmagic"
 	"go.uber.org/zap"
 )
 

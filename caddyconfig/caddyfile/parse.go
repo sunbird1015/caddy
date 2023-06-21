@@ -22,7 +22,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/sunbird1015/caddy/v2"
 	"go.uber.org/zap"
 )
 

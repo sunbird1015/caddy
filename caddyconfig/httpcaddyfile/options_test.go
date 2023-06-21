@@ -3,8 +3,8 @@ package httpcaddyfile
 import (
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	_ "github.com/caddyserver/caddy/v2/modules/logging"
+	"github.com/sunbird1015/caddy/v2/caddyconfig/caddyfile"
+	_ "github.com/sunbird1015/caddy/v2/modules/logging"
 )
 
 func TestGlobalLogOptionSyntax(t *testing.T) {

@@ -26,9 +26,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddypki"
 	"github.com/go-chi/chi"
 	"github.com/smallstep/certificates/acme"
 	"github.com/smallstep/certificates/acme/api"
@@ -37,6 +34,9 @@ import (
 	"github.com/smallstep/certificates/authority/provisioner"
 	"github.com/smallstep/certificates/db"
 	"github.com/smallstep/nosql"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp"
+	"github.com/sunbird1015/caddy/v2/modules/caddypki"
 	"go.uber.org/zap"
 )
 

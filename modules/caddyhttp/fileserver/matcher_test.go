@@ -23,8 +23,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp"
 )
 
 func TestFileMatcher(t *testing.T) {
@@ -211,7 +211,7 @@ func TestPHPFileMatcher(t *testing.T) {
 			matched:      true,
 		},
 		{
-			// See https://github.com/caddyserver/caddy/issues/3623
+			// See https://github.com/sunbird1015/caddy/issues/3623
 			path:         "/%E2%C3",
 			expectedPath: "/%E2%C3",
 			expectedType: "file",

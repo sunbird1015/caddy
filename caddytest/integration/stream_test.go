@@ -13,12 +13,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/caddyserver/caddy/v2/caddytest"
+	"github.com/sunbird1015/caddy/v2/caddytest"
 	"golang.org/x/net/http2"
 	"golang.org/x/net/http2/h2c"
 )
 
-// (see https://github.com/caddyserver/caddy/issues/3556 for use case)
+// (see https://github.com/sunbird1015/caddy/issues/3556 for use case)
 func TestH2ToH2CStream(t *testing.T) {
 	tester := caddytest.NewTester(t)
 	tester.InitServer(` 
@@ -204,7 +204,7 @@ func testH2ToH2CStreamServeH2C(t *testing.T) *http.Server {
 	return server
 }
 
-// (see https://github.com/caddyserver/caddy/issues/3606 for use case)
+// (see https://github.com/sunbird1015/caddy/issues/3606 for use case)
 func TestH2ToH1ChunkedResponse(t *testing.T) {
 	tester := caddytest.NewTester(t)
 	tester.InitServer(` 

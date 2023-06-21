@@ -3,7 +3,7 @@ package httpcaddyfile
 import (
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/modules/caddytls"
+	"github.com/sunbird1015/caddy/v2/modules/caddytls"
 )
 
 func TestAutomationPolicyIsSubset(t *testing.T) {

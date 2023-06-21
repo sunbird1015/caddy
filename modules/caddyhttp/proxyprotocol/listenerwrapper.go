@@ -19,8 +19,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
 	"github.com/mastercactapus/proxyprotocol"
+	"github.com/sunbird1015/caddy/v2"
 )
 
 // ListenerWrapper provides PROXY protocol support to Caddy by implementing

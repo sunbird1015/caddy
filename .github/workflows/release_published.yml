@@ -16,19 +16,19 @@ jobs:
     steps:
 
     # See https://github.com/peter-evans/repository-dispatch
-    - name: Trigger event on caddyserver/dist
+    - name: Trigger event on sunbird1015/dist
       uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.REPO_DISPATCH_TOKEN }}
-        repository: caddyserver/dist
+        repository: sunbird1015/dist
         event-type: release-tagged
         client-payload: '{"tag": "${{ github.event.release.tag_name }}"}'
 
-    - name: Trigger event on caddyserver/caddy-docker
+    - name: Trigger event on sunbird1015/caddy-docker
       uses: peter-evans/repository-dispatch@v2
       with:
         token: ${{ secrets.REPO_DISPATCH_TOKEN }}
-        repository: caddyserver/caddy-docker
+        repository: sunbird1015/caddy-docker
         event-type: release-tagged
         client-payload: '{"tag": "${{ github.event.release.tag_name }}"}'
 

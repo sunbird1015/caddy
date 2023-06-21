@@ -6,9 +6,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/caddyserver/caddy/v2/internal/metrics"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promauto"
+	"github.com/sunbird1015/caddy/v2/internal/metrics"
 )
 
 // Metrics configures metrics observations.

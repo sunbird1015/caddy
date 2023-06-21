@@ -22,9 +22,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/certmagic"
 	"github.com/mholt/acmez"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/certmagic"
 	"go.uber.org/zap"
 )
 

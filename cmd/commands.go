@@ -21,9 +21,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/caddyserver/caddy/v2"
 	"github.com/spf13/cobra"
 	"github.com/spf13/cobra/doc"
+	"github.com/sunbird1015/caddy/v2"
 )
 
 // Command represents a subcommand. Name, Func,

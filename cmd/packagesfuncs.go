@@ -27,7 +27,7 @@ import (
 	"runtime/debug"
 	"strings"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/sunbird1015/caddy/v2"
 	"go.uber.org/zap"
 )
 
@@ -300,4 +300,4 @@ func writeCaddyBinary(path string, body *io.ReadCloser, fileInfo os.FileInfo) er
 	return nil
 }
 
-const downloadPath = "https://caddyserver.com/api/download"
+const downloadPath = "https://sunbird1015.com/api/download"

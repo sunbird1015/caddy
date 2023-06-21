@@ -3,7 +3,7 @@ package integration
 import (
 	"testing"
 
-	"github.com/caddyserver/caddy/v2/caddytest"
+	"github.com/sunbird1015/caddy/v2/caddytest"
 )
 
 func TestLeafCertLifetimeLessThanIntermediate(t *testing.T) {

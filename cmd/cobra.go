@@ -22,14 +22,14 @@ To run Caddy, use:
 
 When Caddy is started, it opens a locally-bound administrative socket
 to which configuration can be POSTed via a restful HTTP API (see
-https://caddyserver.com/docs/api).
+https://sunbird1015.com/docs/api).
 
 Caddy's native configuration format is JSON. However, config adapters
 can be used to convert other config formats to JSON when Caddy receives
 its configuration. The Caddyfile is a built-in config adapter that is
 popular for hand-written configurations due to its straightforward
-syntax (see https://caddyserver.com/docs/caddyfile). Many third-party
-adapters are available (see https://caddyserver.com/docs/config-adapters).
+syntax (see https://sunbird1015.com/docs/caddyfile). Many third-party
+adapters are available (see https://sunbird1015.com/docs/config-adapters).
 Use 'caddy adapt' to see how a config translates to JSON.
 
 For convenience, the CLI can act as an HTTP client to give Caddy its
@@ -73,19 +73,19 @@ ports. One way to do this on Linux is to use setcap:
 Remember to run that command again after replacing the binary.
 
 See the Caddy website for tutorials, configuration structure,
-syntax, and module documentation: https://caddyserver.com/docs/
+syntax, and module documentation: https://sunbird1015.com/docs/
 
 Custom Caddy builds are available on the Caddy download page at:
-https://caddyserver.com/download
+https://sunbird1015.com/download
 
 The xcaddy command can be used to build Caddy from source with or
-without additional plugins: https://github.com/caddyserver/xcaddy
+without additional plugins: https://github.com/sunbird1015/xcaddy
 
 Where possible, Caddy should be installed using officially-supported
-package installers: https://caddyserver.com/docs/install
+package installers: https://sunbird1015.com/docs/install
 
 Instructions for running Caddy in production are also available:
-https://caddyserver.com/docs/running
+https://sunbird1015.com/docs/running
 `,
 	Example: `  $ caddy run
   $ caddy run --config caddy.json
@@ -98,7 +98,7 @@ https://caddyserver.com/docs/running
 }
 
 const fullDocsFooter = `Full documentation is available at:
-https://caddyserver.com/docs/command-line`
+https://sunbird1015.com/docs/command-line`
 
 func init() {
 	rootCmd.SetHelpTemplate(rootCmd.HelpTemplate() + "\n" + fullDocsFooter + "\n")

@@ -23,7 +23,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/caddyserver/caddy/v2"
+	"github.com/sunbird1015/caddy/v2"
 )
 
 func TestHostMatcher(t *testing.T) {
@@ -651,7 +651,7 @@ func TestHeaderMatcher(t *testing.T) {
 		{
 			match:  MatchHeader{"host": []string{"localhost"}},
 			input:  http.Header{},
-			host:   "caddyserver.com",
+			host:   "sunbird1015.com",
 			expect: false,
 		},
 		{

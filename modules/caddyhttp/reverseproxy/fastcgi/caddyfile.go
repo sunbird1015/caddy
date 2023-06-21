@@ -19,14 +19,14 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
-	"github.com/caddyserver/caddy/v2/caddyconfig/httpcaddyfile"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/fileserver"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/reverseproxy"
-	"github.com/caddyserver/caddy/v2/modules/caddyhttp/rewrite"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/caddyconfig"
+	"github.com/sunbird1015/caddy/v2/caddyconfig/caddyfile"
+	"github.com/sunbird1015/caddy/v2/caddyconfig/httpcaddyfile"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp/fileserver"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp/reverseproxy"
+	"github.com/sunbird1015/caddy/v2/modules/caddyhttp/rewrite"
 )
 
 func init() {

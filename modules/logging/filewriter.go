@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/caddyconfig/caddyfile"
 	"github.com/dustin/go-humanize"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/caddyconfig/caddyfile"
 	"gopkg.in/natefinch/lumberjack.v2"
 )
 

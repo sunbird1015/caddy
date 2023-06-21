@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/caddyserver/certmagic"
+	"github.com/sunbird1015/certmagic"
 )
 
 func pemDecodeSingleCert(pemDER []byte) (*x509.Certificate, error) {

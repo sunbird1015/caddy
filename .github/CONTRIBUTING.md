@@ -23,7 +23,7 @@ Other menu items:
 
 ### Contributing code
 
-You can have a huge impact on the project by helping with its code. To contribute code to Caddy, first submit or comment in an issue to discuss your contribution, then open a [pull request](https://github.com/caddyserver/caddy/pulls) (PR). If you're new to our community, that's okay: **we gladly welcome pull requests from anyone, regardless of your native language or coding experience.** You can get familiar with Caddy's code base by using [code search at Sourcegraph](https://sourcegraph.com/github.com/caddyserver/caddy).
+You can have a huge impact on the project by helping with its code. To contribute code to Caddy, first submit or comment in an issue to discuss your contribution, then open a [pull request](https://github.com/sunbird1015/caddy/pulls) (PR). If you're new to our community, that's okay: **we gladly welcome pull requests from anyone, regardless of your native language or coding experience.** You can get familiar with Caddy's code base by using [code search at Sourcegraph](https://sourcegraph.com/github.com/sunbird1015/caddy).
 
 We hold contributions to a high standard for quality :bowtie:, so don't be surprised if we ask for revisions&mdash;even if it seems small or insignificant. Please don't take it personally. :blue_heart: If your change is on the right track, we can guide you to make it mergable.
 
@@ -47,7 +47,7 @@ Here are some of the expectations we have of contributors:
 
 - **Pull requests may still get closed.** The longer a PR stays open and idle, the more likely it is to be closed. If we haven't reviewed it in a while, it probably means the change is not a priority. Please don't take this personally, we're trying to balance a lot of tasks! If nobody else has commented or reacted to the PR, it likely means your change is useful only to you. The reality is this happens quite a lot. We don't tend to accept PRs that aren't generally helpful. For these reasons or others, the PR may get closed even after a review. We are not obligated to accept all proposed changes, even if the best justification we can give is something vague like, "It doesn't sit right." Sometimes PRs are just the wrong thing or the wrong time. Because it is open source, you can always build your own modified version of Caddy with a change you need, even if we reject it in the official repo. Plus, because Caddy is extensible, it's possible your feature could make a great plugin instead!
 
-- **You certify that you wrote and comprehend the code you submit.** The Caddy project welcomes original contributions that comply with [our CLA](https://cla-assistant.io/caddyserver/caddy), meaning that authors must be able to certify that they created or have rights to the code they are contributing. In addition, we require that code is not simply copy-pasted from Q/A sites or AI language models without full comprehension and rigorous testing. In other words: contributors are allowed to refer to communities for assistance and use AI tools such as language models for inspiration, but code which originates from or is assisted by these resources MUST be:
+- **You certify that you wrote and comprehend the code you submit.** The Caddy project welcomes original contributions that comply with [our CLA](https://cla-assistant.io/sunbird1015/caddy), meaning that authors must be able to certify that they created or have rights to the code they are contributing. In addition, we require that code is not simply copy-pasted from Q/A sites or AI language models without full comprehension and rigorous testing. In other words: contributors are allowed to refer to communities for assistance and use AI tools such as language models for inspiration, but code which originates from or is assisted by these resources MUST be:
 
 	- Licensed for you to freely share
 	- Fully comprehended by you (be able to explain every line of code)
@@ -64,17 +64,17 @@ We often grant [collaborator status](#collaborator-instructions) to contributors
 
 Contributing to Go projects on GitHub is fun and easy. After you have proposed your change in an issue, we recommend the following workflow:
 
-1. [Fork this repo](https://github.com/caddyserver/caddy). This makes a copy of the code you can write to.
+1. [Fork this repo](https://github.com/sunbird1015/caddy). This makes a copy of the code you can write to.
 
-2. If you don't already have this repo (caddyserver/caddy.git) repo on your computer, clone it down: `git clone https://github.com/caddyserver/caddy.git`
+2. If you don't already have this repo (sunbird1015/caddy.git) repo on your computer, clone it down: `git clone https://github.com/sunbird1015/caddy.git`
 
-3. Tell git that it can push the caddyserver/caddy.git repo to your fork by adding a remote: `git remote add myfork https://github.com/<your-username>/caddy.git`
+3. Tell git that it can push the sunbird1015/caddy.git repo to your fork by adding a remote: `git remote add myfork https://github.com/<your-username>/caddy.git`
 
-4. Make your changes in the caddyserver/caddy.git repo on your computer.
+4. Make your changes in the sunbird1015/caddy.git repo on your computer.
 
 5. Push your changes to your fork: `git push myfork`
 
-6. [Create a pull request](https://github.com/caddyserver/caddy/pull/new/master) to merge your changes into caddyserver/caddy @ master. (Click "compare across forks" and change the head fork.)
+6. [Create a pull request](https://github.com/sunbird1015/caddy/pull/new/master) to merge your changes into sunbird1015/caddy @ master. (Click "compare across forks" and change the head fork.)
 
 This workflow is nice because you don't have to change import paths. You can get fancier by using different branches if you want.
 
@@ -83,7 +83,7 @@ This workflow is nice because you don't have to change import paths. You can get
 
 Caddy can do more with modules! Anyone can write one. Caddy modules are Go libraries that get compiled into Caddy, extending its feature set. They can add directives to the Caddyfile, add new configuration adapters, and even implement new server types (e.g. HTTP, DNS).
 
-[Learn how to write a module here](https://caddyserver.com/docs/extending-caddy). You should also share and discuss your module idea [on the forums](https://caddy.community) to have people test it out. We don't use the Caddy issue tracker for third-party modules.
+[Learn how to write a module here](https://sunbird1015.com/docs/extending-caddy). You should also share and discuss your module idea [on the forums](https://caddy.community) to have people test it out. We don't use the Caddy issue tracker for third-party modules.
 
 
 ### Getting help using Caddy
@@ -95,7 +95,7 @@ Many people on the forums could benefit from your experience and expertise, too.
 
 ### Reporting bugs
 
-Like every software, Caddy has its flaws. If you find one, [search the issues](https://github.com/caddyserver/caddy/issues) to see if it has already been reported. If not, [open a new issue](https://github.com/caddyserver/caddy/issues/new) and describe the bug, and somebody will look into it! (This repository is only for Caddy and its standard modules.)
+Like every software, Caddy has its flaws. If you find one, [search the issues](https://github.com/sunbird1015/caddy/issues) to see if it has already been reported. If not, [open a new issue](https://github.com/sunbird1015/caddy/issues/new) and describe the bug, and somebody will look into it! (This repository is only for Caddy and its standard modules.)
 
 **You can help us fix bugs!** Speed up the patch by identifying the bug in the code. This can sometimes be done by adding `fmt.Println()` statements (or similar) in relevant code paths to narrow down where the problem may be. It's a good way to [introduce yourself to the Go language](https://tour.golang.org), too.
 
@@ -134,14 +134,14 @@ The maintainer is usually able to do the rest; but of course the reporter may in
 
 ### Suggesting features
 
-First, [search to see if your feature has already been requested](https://github.com/caddyserver/caddy/issues). If it has, you can add a :+1: reaction to vote for it. If your feature idea is new, open an issue to request the feature. Please describe your idea thoroughly so that we know how to implement it! Really vague requests may not be helpful or actionable and, without clarification, will have to be closed.
+First, [search to see if your feature has already been requested](https://github.com/sunbird1015/caddy/issues). If it has, you can add a :+1: reaction to vote for it. If your feature idea is new, open an issue to request the feature. Please describe your idea thoroughly so that we know how to implement it! Really vague requests may not be helpful or actionable and, without clarification, will have to be closed.
 
 While we really do value your requests and implement many of them, not all features are a good fit for Caddy. Most of those [make good modules](#writing-a-caddy-module), which can be made by anyone! But if a feature is not in the best interest of the Caddy project or its users in general, we may politely decline to implement it into Caddy core. Additionally, some features are bad ideas altogether (for either obvious or non-obvious reasons) which may be rejected. We'll try to explain why we reject a feature, but sometimes the best we can do is, "It's not a good fit for the project."
 
 
 ### Improving documentation
 
-Caddy's documentation is available at [https://caddyserver.com/docs](https://caddyserver.com/docs) and its source is in the [website repo](https://github.com/caddyserver/website). If you would like to make a fix to the docs, please submit an issue there describing the change to make.
+Caddy's documentation is available at [https://sunbird1015.com/docs](https://sunbird1015.com/docs) and its source is in the [website repo](https://github.com/sunbird1015/website). If you would like to make a fix to the docs, please submit an issue there describing the change to make.
 
 Note that third-party module documentation is not hosted by the Caddy website, other than basic usage examples. They are managed by the individual module authors, and you will have to contact them to change their documentation.
 
@@ -189,7 +189,7 @@ Collaborators have push rights to the repository. We grant this permission after
 
 ## Security Policy
 
-If you think you've found a security vulnerability, please refer to our [Security Policy](https://github.com/caddyserver/caddy/security/policy) document.
+If you think you've found a security vulnerability, please refer to our [Security Policy](https://github.com/sunbird1015/caddy/security/policy) document.
 
 
 ## Thank you

@@ -25,9 +25,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/caddyserver/caddy/v2"
-	"github.com/caddyserver/caddy/v2/modules/caddyevents"
-	"github.com/caddyserver/certmagic"
+	"github.com/sunbird1015/caddy/v2"
+	"github.com/sunbird1015/caddy/v2/modules/caddyevents"
+	"github.com/sunbird1015/certmagic"
 	"go.uber.org/zap"
 )
 
@@ -273,7 +273,7 @@ func (t *TLS) Start() error {
 		for _, ap := range t.Automation.Policies {
 			if ap.OnDemand && ap.isWildcardOrDefault() {
 				t.logger.Warn("YOUR SERVER MAY BE VULNERABLE TO ABUSE: on-demand TLS is enabled, but no protections are in place",
-					zap.String("docs", "https://caddyserver.com/docs/automatic-https#on-demand-tls"))
+					zap.String("docs", "https://sunbird1015.com/docs/automatic-https#on-demand-tls"))
 				break
 			}
 		}
