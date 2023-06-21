@@ -15,16 +15,14 @@
 package caddytls
 
 import (
-	"bytes"
 	"context"
 	"crypto/x509"
-	"encoding/pem"
+	"errors"
 	"time"
 
 	"github.com/smallstep/certificates/authority/provisioner"
 	"github.com/sunbird1015/caddy/v2"
 	"github.com/sunbird1015/caddy/v2/caddyconfig/caddyfile"
-	"github.com/sunbird1015/caddy/v2/modules/caddypki"
 	"github.com/sunbird1015/certmagic"
 	"go.uber.org/zap"
 )
@@ -51,7 +49,6 @@ type InternalIssuer struct {
 	// validate certificate chains.
 	SignWithRoot bool `json:"sign_with_root,omitempty"`
 
-	ca     *caddypki.CA
 	logger *zap.Logger
 }
 
@@ -65,85 +62,18 @@ func (InternalIssuer) CaddyModule() caddy.ModuleInfo {
 
 // Provision sets up the issuer.
 func (iss *InternalIssuer) Provision(ctx caddy.Context) error {
-	iss.logger = ctx.Logger()
-
-	// set some defaults
-	if iss.CA == "" {
-		iss.CA = caddypki.DefaultCAID
-	}
-
-	// get a reference to the configured CA
-	appModule, err := ctx.App("pki")
-	if err != nil {
-		return err
-	}
-	pkiApp := appModule.(*caddypki.PKI)
-	ca, err := pkiApp.GetCA(ctx, iss.CA)
-	if err != nil {
-		return err
-	}
-	iss.ca = ca
-
-	// set any other default values
-	if iss.Lifetime == 0 {
-		iss.Lifetime = caddy.Duration(defaultInternalCertLifetime)
-	}
-
-	return nil
+	return errors.New("deleted")
 }
 
 // IssuerKey returns the unique issuer key for the
 // confgured CA endpoint.
 func (iss InternalIssuer) IssuerKey() string {
-	return iss.ca.ID
+	return ""
 }
 
 // Issue issues a certificate to satisfy the CSR.
 func (iss InternalIssuer) Issue(ctx context.Context, csr *x509.CertificateRequest) (*certmagic.IssuedCertificate, error) {
-	// prepare the signing authority
-	authCfg := caddypki.AuthorityConfig{
-		SignWithRoot: iss.SignWithRoot,
-	}
-	auth, err := iss.ca.NewAuthority(authCfg)
-	if err != nil {
-		return nil, err
-	}
-
-	// get the cert (public key) that will be used for signing
-	var issuerCert *x509.Certificate
-	if iss.SignWithRoot {
-		issuerCert = iss.ca.RootCertificate()
-	} else {
-		issuerCert = iss.ca.IntermediateCertificate()
-	}
-
-	// ensure issued certificate does not expire later than its issuer
-	lifetime := time.Duration(iss.Lifetime)
-	if time.Now().Add(lifetime).After(issuerCert.NotAfter) {
-		lifetime = time.Until(issuerCert.NotAfter)
-		iss.logger.Warn("cert lifetime would exceed issuer NotAfter, clamping lifetime",
-			zap.Duration("orig_lifetime", time.Duration(iss.Lifetime)),
-			zap.Duration("lifetime", lifetime),
-			zap.Time("not_after", issuerCert.NotAfter),
-		)
-	}
-
-	certChain, err := auth.Sign(csr, provisioner.SignOptions{}, customCertLifetime(caddy.Duration(lifetime)))
-	if err != nil {
-		return nil, err
-	}
-
-	var buf bytes.Buffer
-	for _, cert := range certChain {
-		err := pem.Encode(&buf, &pem.Block{Type: "CERTIFICATE", Bytes: cert.Raw})
-		if err != nil {
-			return nil, err
-		}
-	}
-
-	return &certmagic.IssuedCertificate{
-		Certificate: buf.Bytes(),
-	}, nil
+	return nil, errors.New("deleted")
 }
 
 // UnmarshalCaddyfile deserializes Caddyfile tokens into iss.

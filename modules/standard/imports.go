@@ -6,8 +6,6 @@ import (
 	_ "github.com/sunbird1015/caddy/v2/modules/caddyevents"
 	_ "github.com/sunbird1015/caddy/v2/modules/caddyevents/eventsconfig"
 	_ "github.com/sunbird1015/caddy/v2/modules/caddyhttp/standard"
-	_ "github.com/sunbird1015/caddy/v2/modules/caddypki"
-	_ "github.com/sunbird1015/caddy/v2/modules/caddypki/acmeserver"
 	_ "github.com/sunbird1015/caddy/v2/modules/caddytls"
 	_ "github.com/sunbird1015/caddy/v2/modules/caddytls/distributedstek"
 	_ "github.com/sunbird1015/caddy/v2/modules/caddytls/standardstek"
